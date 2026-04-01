@@ -40,6 +40,13 @@
     #menu.open{
       left: 0;
     }
+    #navbar img{
+      object-fit: cover;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      clip-path: circle(50%);
+    }
   </style>
 
   <title>I-men</title>
@@ -56,13 +63,18 @@
   </header>
   <div id="menu" style="color: #ffffff; background-color: #000000; padding: 0px;">
     <ul>
-      <li>HOME</li>
-      <li>NEW IN</li>
-      <li>SALE</li>
-      <li>PRODUCTS</li>
-      <li>ABOUT</li>
-      <li>CONTACT</li>
+      <li id="home-btn">HOME</li>
+      <li id="new-in-btn">NEW IN</li>
+      <li id="sale-btn" >SALE</li>
+      <li id="products-btn">PRODUCTS</li>
+      <li id="about-btn">ABOUT</li>
+      <li id="contact-btn">CONTACT</li>
     </ul>
+  </div>
+  <div id="navbar" style="display: flex; gap: 7px; padding: 10px; background-color: #ffffff;">
+    <img src="icons-for-nav\best-seller-icon.png" alt="Best Seller Icon" ">
+    <img src="icons-for-nav\sale-icon.png" alt="Sale Icon" ">
+    <img src="icons-for-nav\all-styles-icon.png" alt="All Styles Icon" ">
   </div>
   <script>
     const menuBtn = document.getElementById('menu-btn');
@@ -76,6 +88,17 @@
       if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
         menu.classList.remove('open')
       }
+    });
+
+    const homeBtn = document.getElementById('home-btn');
+    const newInBtn = document.getElementById('new-in-btn');
+    const saleBtn = document.getElementById('sale-btn');
+    const productsBtn = document.getElementById('products-btn');
+    const aboutBtn = document.getElementById('about-btn');
+    const contactBtn = document.getElementById('contact-btn');
+
+    homeBtn.addEventListener('click', () => {
+      location.reload();
     });
   </script>
   <script src="script.js"></script>
