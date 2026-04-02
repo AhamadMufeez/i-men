@@ -40,13 +40,24 @@
     #menu.open{
       left: 0;
     }
-    #navbar img{
-      object-fit: cover;
+    #best-seller-icon{
       height: 70px;
       width: 70px;
-      border-radius: 50%;
-      clip-path: circle(50%);
     }
+    #sale-icon{
+      height: 75px;
+      width: 75px;
+    }
+    #all-styles-icon{
+      height: 70px;
+      width: 70px;
+    }
+    #t-shirt-icon{
+      height: 70px;
+      width: 70px;
+    }
+
+
   </style>
 
   <title>I-men</title>
@@ -72,10 +83,10 @@
     </ul>
   </div>
   <div id="navbar" style="display: flex; gap: 7px; padding: 10px; background-color: #ffffff;">
-    <img src="icons-for-nav\best-seller-icon.png" alt="Best Seller Icon" ">
-    <img src="icons-for-nav\sale-icon.png" alt="Sale Icon" ">
-    <img src="icons-for-nav\all-styles-icon.png" alt="All Styles Icon" ">
-    <img src="icons-for-nav\t-shirt-icon.jpeg" alt="T-shirt icon">
+    <img id="best-seller-icon" src="icons-for-nav\best-seller-icon.png" alt="Best Seller Icon" ">
+    <img id="sale-icon" src="icons-for-nav\sale-icon.png" alt="Sale Icon" ">
+    <img id="all-styles-icon" src="icons-for-nav\all-styles-icon.png" alt="All Styles Icon" ">
+    <img id="t-shirt-icon" src="icons-for-nav\t-shirt-icon.jpeg" alt="T-shirt icon">
   </div>
   <script>
     const menuBtn = document.getElementById('menu-btn');
