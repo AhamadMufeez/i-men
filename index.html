@@ -61,6 +61,22 @@
       cursor: pointer;
       flex: 0 0 auto;
     }
+    #best-seller-prpducts{
+      height: 500px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .product-card{
+      width: 200px;
+      border: 1px solid #272424;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+    }
+    .product-card img{
+      width: 95%;
+      height: auto;
+    }
 
 
   </style>
@@ -95,6 +111,29 @@
     <img id="casuals-icon" src="icons-for-nav\casuals-icon.png" alt="Casuals Icon">
     <img id="trousers-icon" src="icons-for-nav\trousers-icon.png" alt="Trousers Icon">
   </div>
+
+  <div id="best-seller-section">
+      <h2 style="margin-left: 10px;">Best Sellers</h2>
+      <div id="best-seller-products" style="display: flex; gap: 10px; padding: 10px; background-color: #ffffff;">
+        <div class="product-card">
+          <img src="best-sellers\best-seller-1.jpeg" alt="Best Seller 1" style="width: 100%; height: auto;">
+          <h3>Product Name 1</h3>
+          <p>$29.99</p>
+        </div>
+        <div class="product-card">
+          <img src="best-sellers\best-seller-2.jpeg" alt="Best Seller 2" style="width: 100%; height: auto;">
+          <h3>Product Name 2</h3>
+          <p>$39.99</p>
+        </div>
+        <div class="product-card">
+          <img src="best-sellers\best-seller-3.jpeg" alt="Best Seller 3" style="width: 100%; height: auto;">
+          <h3>Product Name 3</h3>
+          <p>$49.99</p>
+        </div>  
+      </div>
+  </div>
+
+
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('menu');
