@@ -61,10 +61,13 @@
       cursor: pointer;
       flex: 0 0 auto;
     }
-    #best-seller-prpducts{
-      height: 500px;
+    .product-card-container{
+      height: 300px;
       overflow-x: auto;
       scroll-behavior: smooth;
+    }
+    .product-card-container::-webkit-scrollbar {
+      display: none;
     }
     .product-card{
       width: 200px;
@@ -72,10 +75,12 @@
       border-radius: 4px;
       padding: 10px;
       text-align: center;
+       flex: 0 0 auto ;
     }
     .product-card img{
       width: 95%;
       height: auto;
+     
     }
 
 
@@ -114,22 +119,53 @@
 
   <div id="best-seller-section">
       <h2 style="margin-left: 10px;">Best Sellers</h2>
-      <div id="best-seller-products" style="display: flex; gap: 10px; padding: 10px; background-color: #ffffff;">
+      <div class="product-card-container" style="display: flex; gap: 10px; padding: 10px; background-color: #ffffff;">
         <div class="product-card">
           <img src="best-sellers\best-seller-1.jpeg" alt="Best Seller 1" style="width: 100%; height: auto;">
           <h3>Product Name 1</h3>
-          <p>$29.99</p>
+          <p>₹29.99</p>
         </div>
         <div class="product-card">
           <img src="best-sellers\best-seller-2.jpeg" alt="Best Seller 2" style="width: 100%; height: auto;">
           <h3>Product Name 2</h3>
-          <p>$39.99</p>
+          <p>₹39.99</p>
         </div>
         <div class="product-card">
           <img src="best-sellers\best-seller-3.jpeg" alt="Best Seller 3" style="width: 100%; height: auto;">
           <h3>Product Name 3</h3>
-          <p>$49.99</p>
-        </div>  
+          <p>₹49.99</p>
+        </div> 
+        <div class="product-card">
+          <img src="best-sellers\best-seller-4.jpeg" alt="Best Seller 4" style="width: 100%; height: auto;">
+          <h3>Product Name 4</h3>
+          <p>₹59.99</p> 
+        </div>
+      </div>
+  </div>
+
+  <div id="new-arrival-section">
+      <h2 style="margin-left: 10px;">New Arrivals</h2>
+      <div class="product-card-container" style="display: flex; gap: 10px; padding: 10px; background-color: #ffffff;">
+        <div class="product-card">
+          <img src="new-arrival\new-arrival-1.jpeg" alt="New Arrival 1" style="width: 100%; height: auto;">
+          <h3>Product Name 1</h3>
+          <p>₹29.99</p>
+        </div>
+        <div class="product-card">
+          <img src="new-arrival\new-arrival-2.jpeg" alt="New Arrival 2" style="width: 100%; height: auto;">
+          <h3>Product Name 2</h3>
+          <p>₹39.99</p>
+        </div>
+        <div class="product-card">
+          <img src="new-arrival\new-arrival-3.jpeg" alt="New Arrival 3" style="width: 100%; height: auto;">
+          <h3>Product Name 3</h3>
+          <p>₹49.99</p>
+        </div> 
+        <div class="product-card">
+          <img src="new-arrival\new-arrival-4.jpeg" alt="New Arrival 4" style="width: 100%; height: auto;">
+          <h3>Product Name 4</h3>
+          <p>₹59.99</p> 
+        </div>
       </div>
   </div>
 
