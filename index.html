@@ -82,7 +82,28 @@
       height: auto;
      
     }
-
+    .arrow{
+      font-size: 24px;
+      cursor: pointer;
+      position:absolute;
+      right: 10px;
+      top: 1px;
+    }
+    #best-seller-section, #new-arrival-section, #all-styles{
+      position: relative;
+    }
+    .section-heading {
+      position: relative;
+    }
+    .section-heading h2 {
+      margin: 0;
+    }
+    .section-heading .arrow {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
   </style>
 
@@ -140,6 +161,11 @@
           <h3>Product Name 4</h3>
           <p>₹59.99</p> 
         </div>
+        <div class="product-card">
+          <img src="best-sellers\best-seller-5.jpeg" alt="Best Seller 5" style="width: 100%; height: auto;">
+          <h3>Product Name 5</h3>
+          <p>₹69.99</p>
+        </div>
       </div>
   </div>
 
@@ -166,12 +192,18 @@
           <h3>Product Name 4</h3>
           <p>₹59.99</p> 
         </div>
+        <div class="product-card">
+            <img src="new-arrival\new-arrival-5.jpeg" alt="New Arrival 5" style="width: 100%; height: auto;">
+            <h3>Product Name 5</h3>
+            <p>₹69.99</p>
+        </div>
       </div>
   </div>
 
 
   <div id="all-styles">
       <h2 style="margin-left: 10px;">All Styles</h2>
+      <h2 class="arrow">&rarr;</h2>
       <div class="product-card-container" style="display: flex; gap: 10px; padding: 10px; background-color: #ffffff;">
         <div class="product-card">
           <img src="all-styles\all-styles-1.jpeg" alt="All Styles 1" style="width: 100%; height: auto;">
@@ -192,6 +224,11 @@
           <img src="all-styles\all-styles-4.jpeg" alt="All Styles 4" style="width: 100%; height: auto;">
           <h3>Product Name 4</h3>
           <p>₹59.99</p> 
+        </div>
+        <div class="product-card">
+          <img src="all-styles\all-styles-5.jpeg" alt="All Styles 5" style="width: 100%; height: auto;">
+          <h3>Product Name 5</h3>
+          <p>₹69.99</p>
         </div>
       </div>
   </div>
