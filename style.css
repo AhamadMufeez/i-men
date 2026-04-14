@@ -80,6 +80,7 @@
 .section-heading {
   display: flex;
   align-items: center;
+  height:50px;
   justify-content: space-between;
   padding: 0 10px;
   gap: 1rem; /* fallback spacing */
@@ -91,7 +92,7 @@
 }
 
 .section-heading .arrow {
-  font-size: 1.25rem;
+  font-size: 1.25px;
   line-height: 1;
   margin-left: auto;
   padding-right: 10px;
